@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Auth">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="30dp"
+        android:gravity="center">
+
+        <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:hint="Phone"
+                android:textColor="@color/colorPrimary"/>
+
+        <android.support.v7.widget.AppCompatButton
+               android:id="@+id/verification_code"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Submit" />
+
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/OTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:hint="     OTP     "
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in" />
+
+    </LinearLayout>
+
+</RelativeLayout>
