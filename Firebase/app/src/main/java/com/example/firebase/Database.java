@@ -1,5 +1,6 @@
 package com.example.firebase;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,7 +25,7 @@ public class Database extends AppCompatActivity {
 
     DatabaseReference databaseStudents;
     EditText text_name, text_phone, text_email, text_dob;
-    Button submit;
+    Button submit, stud;
     ListView listStudents;
     List<Student> students = new ArrayList<>();
 
@@ -35,13 +36,14 @@ public class Database extends AppCompatActivity {
 
         databaseStudents = FirebaseDatabase.getInstance().getReference("Student");
 
-        text_name = (EditText) findViewById(R.id.name);
-        text_phone = (EditText) findViewById(R.id.phone);
-        text_email = (EditText) findViewById(R.id.email);
-        text_dob = (EditText) findViewById(R.id.dob);
-        listStudents = (ListView) findViewById(R.id.listStudents);
+        text_name = findViewById(R.id.name);
+        text_phone = findViewById(R.id.phone);
+        text_email = findViewById(R.id.email);
+        text_dob = findViewById(R.id.dob);
+        listStudents = findViewById(R.id.listStudents);
 
-        submit = (Button) findViewById(R.id.submit);
+        submit = findViewById(R.id.submit);
+        stud = findViewById(R.id.stu_list);
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,45 +53,20 @@ public class Database extends AppCompatActivity {
             }
         });
 
+        stud.setOnClickListener( new View.OnClickListener(){
 
-    }
+            public void onClick(View view) {
 
-   protected void onStart(){
-
-        super.onStart();
-
-        databaseStudents.addValueEventListener(new ValueEventListener() {
-
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-
-                students.clear();
-
-
-                //iterating through all the nodes
-                for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
-                    //getting artist
-                    Student student = postSnapshot.getValue(Student.class);
-                    //adding artist to the list
-                    students.add(student);
-                }
-
-                listStudents = (ListView) findViewById(R.id.listStudents);
-                //creating adapter
-                if(!students.isEmpty()) {
-                    StudentList studentAdapter = new StudentList(Database.this, students);
-                    //attaching adapter to the listview
-                    listStudents.setAdapter(studentAdapter);
-                }
+              Intent intent = new Intent( Database.this, Retrieve.class);
+              startActivity(intent);
 
             }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
         });
+
+
     }
+    
 
     private void addStudent() {
 

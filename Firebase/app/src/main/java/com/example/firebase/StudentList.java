@@ -31,10 +31,10 @@ public class StudentList extends ArrayAdapter<Student> {
         View listViewItem = inflater.inflate(R.layout.list_student, null, true);
 
 
-        text_name = (TextView) listViewItem.findViewById(R.id.nameS);
-        text_phone = (TextView) listViewItem.findViewById(R.id.phoneS);
-        text_email = (TextView) listViewItem.findViewById(R.id.emailS);
-        text_dob = (TextView) listViewItem.findViewById(R.id.dobS);
+        text_name = listViewItem.findViewById(R.id.nameS);
+        text_phone = listViewItem.findViewById(R.id.phoneS);
+        text_email = listViewItem.findViewById(R.id.emailS);
+        text_dob = listViewItem.findViewById(R.id.dobS);
 
 
         Student student = students.get(position);
