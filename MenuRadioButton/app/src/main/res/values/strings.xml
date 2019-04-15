@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">MenuRadioButton</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_next">Next</string>
+    <string name="Submit">Submit</string>
+    <string name="Admin">Admin</string>
+    <string name="Faculty">Faculty</string>
+    <string name="Student">Student</string>
+</resources>
