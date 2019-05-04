@@ -23,6 +23,12 @@
 <br>Output</br>
 <br>![ExpandableCards](https://user-images.githubusercontent.com/30630384/57184484-de6aa380-6ed9-11e9-87ad-83f42588c720.png)</br>
 
+<b>MultiChoice </b>
+<br> This app simply display checkbox options in alert dialogue and captures the inputs for furthur processing.</br>
+<br>Output</br>
+<br>![MultiCheckbox](https://user-images.githubusercontent.com/30630384/57184489-e591b180-6ed9-11e9-8944-ccfe75cf00ee.png)</br>
 
-<br>![MultiCheckbox](https://user-images.githubusercontent.com/30630384/57184489-e591b180-6ed9-11e9-8944-ccfe75cf00ee.png)
-![RecyclerView](https://user-images.githubusercontent.com/30630384/57184490-e62a4800-6ed9-11e9-931a-73553193a05b.png) </br>
+<b>Recycler View</b>
+<br> This app displayes names of students in recycler view and also noncheckable checkboxes are used for different choices.</br>
+<br>Output</br>
+<br>![RecyclerView](https://user-images.githubusercontent.com/30630384/57184490-e62a4800-6ed9-11e9-931a-73553193a05b.png) </br>
