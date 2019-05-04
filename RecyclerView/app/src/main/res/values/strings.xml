@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RecyclerView</string>
+
+
+    <string name="eligible">Company Eligible</string>
+    <string name="registered">Company Registered</string>
+    <string name="attended">Company Attended</string>
+    <string name="selected">Company Selected</string>
+</resources>
