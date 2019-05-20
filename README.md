@@ -1,6 +1,6 @@
 # AndroidProjects
 
-<br>Brief Introduction of small Applications with respective output. </br>
+<br>Brief introduction of small applications with respective outputs. </br>
 
 <b>Authentication</b> 
 <br> This app uses Firebase Database to authenticate android app using Phone number and OTP.</br>
