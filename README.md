@@ -32,3 +32,12 @@
 <br> This app displayes names of students in recycler view and also noncheckable checkboxes are used for different choices.</br>
 <br>Output</br>
 <br>![RecyclerView](https://user-images.githubusercontent.com/30630384/57184490-e62a4800-6ed9-11e9-931a-73553193a05b.png) </br>
+
+<b>FireApp</b>
+<br> This app uses Firebase Realtime database for Storage and Reterival of Data.</br>
+<br>Output</br>
+<br>![Storage](https://user-images.githubusercontent.com/30630384/58036844-a99d5400-7b49-11e9-9326-661d997a2954.png) </br>
+<br>![FirebaseConsole](https://user-images.githubusercontent.com/30630384/58037307-c0907600-7b4a-11e9-99ef-3d6231f8d33a.png) </br>
+<br>![Retrival](https://user-images.githubusercontent.com/30630384/58037146-655e8380-7b4a-11e9-8593-79cca3a7edc0.png) </br>
+
+
